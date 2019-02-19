@@ -2,7 +2,7 @@
 ## Requirements
 * Raspberry Pi 3 B (not B+ at this time)
 * micro-usb cable
-* MicroSD card (adapter) 
+* MicroSD card (adapter) - 8GB Minimum, Class 10 or better
 * SD Card reader
 * USB keyboard(required) 
 * USB Mouse (optional) 
