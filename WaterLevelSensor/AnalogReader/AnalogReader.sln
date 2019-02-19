@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalogReader", "AnalogReader\AnalogReader.csproj", "{BFD66784-1DF3-4DA1-9969-87BC55936769}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Debug|ARM.ActiveCfg = Debug|ARM
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Debug|ARM.Build.0 = Debug|ARM
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Debug|ARM.Deploy.0 = Debug|ARM
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Debug|x64.ActiveCfg = Debug|x64
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Debug|x64.Build.0 = Debug|x64
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Debug|x64.Deploy.0 = Debug|x64
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Debug|x86.ActiveCfg = Debug|x86
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Debug|x86.Build.0 = Debug|x86
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Debug|x86.Deploy.0 = Debug|x86
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Release|ARM.ActiveCfg = Release|ARM
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Release|ARM.Build.0 = Release|ARM
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Release|ARM.Deploy.0 = Release|ARM
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Release|x64.ActiveCfg = Release|x64
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Release|x64.Build.0 = Release|x64
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Release|x64.Deploy.0 = Release|x64
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Release|x86.ActiveCfg = Release|x86
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Release|x86.Build.0 = Release|x86
+		{BFD66784-1DF3-4DA1-9969-87BC55936769}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B7DEBF4-2B37-41E9-98F1-4ECBEB723591}
+	EndGlobalSection
+EndGlobal
