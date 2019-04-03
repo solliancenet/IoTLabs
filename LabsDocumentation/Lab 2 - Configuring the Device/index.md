@@ -22,6 +22,8 @@ Windows IoT Core also allows location information to be shared. If you have a re
 ## Network Information
 If you weren't able to setup the Wi-Fi information from the dashboard, you will be able to do it at this point in the setup process. Select the network with which you'd like to connect, then enter the Wi-Fi key to make the connection.
 
+![Enter Wi-Fi Key](./images/EnterWiFiKey.jpg)
+
 ## Completed Setup
 Once the device has been setup, the default application for Windows IoT Core will display.
 
