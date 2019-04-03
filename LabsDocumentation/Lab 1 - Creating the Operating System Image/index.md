@@ -15,6 +15,10 @@ Download the IoT Dashboard application
 * Accept the license terms
 * Click the download and install - the image will download and install on the SD card. A Command window will appear to complete the installation. At any time multiple File Explorer windows may open, simply close them. If prompted to format a drive in these File explorer windows, select cancel. This is due to a bug that Microsoft and Microsoft is aware - it has to do with the SD card being partitioned into multiple drives to support Microsoft IoT Core.
 
+![Setting up a new device](./images/IoTDashboardSetUpANewDevice.png)
+
+![Installation Console Window](./images/IoTDashboardConsoleWindow.png)
+
 ## Install the Screen
 T.B.D. until we decide which screen we are going with
 

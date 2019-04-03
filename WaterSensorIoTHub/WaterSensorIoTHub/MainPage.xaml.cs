@@ -11,11 +11,16 @@ namespace WaterSensorIoTHub
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private static DeviceClient _deviceClient = null;
         public MainPage()
         {
             this.InitializeComponent();
             //AzureIoTHub.SendDeviceToCloudMessageAsync().Wait();
-            SendMessageToIoTHubAsync(22);
+            var deviceId = "cpi3";
+            var deviceKey = "xvNO1KsgmEkWHFweYATBeGg069obtqbICop8wl09+nc=";
+            var hubUri = "IoTLabsHub.azure-devices.net";
+            _deviceClient = DeviceClient.Create(hubUri, new DeviceAuthenticationWithRegistrySymmetricKey(deviceId, deviceKey), TransportType.Http1);
+            SendMessageToIoTHubAsync(84);
            
         }
 
@@ -32,33 +37,30 @@ namespace WaterSensorIoTHub
                 AuthenticationMethodFactory.
                     CreateAuthenticationWithToken(deviceId, sasToken), TransportType.Mqtt)){}
             */
-            //TODO: see if implementing a background service will allow the use of the MQTT transport - determined UWP only seems to support Http1
-            var connectionString = "HostName=IoTLabsHub.azure-devices.net;DeviceId=cpi3;SharedAccessKey=xvNO1KsgmEkWHFweYATBeGg069obtqbICop8wl09+nc=";
+           
+          
 
-
-            using (var deviceClient = DeviceClient.CreateFromConnectionString(connectionString, TransportType.Http1))
+           
+            try
             {
-                
-                try
-                {
-                    var payload = "{" +
-                        "\"deviceId\":\"cpi3\", " +
-                        "\"sensorType\":\"Water Level\", " +
-                        "\"sensorReading\":" + sensorReading + ", " +
-                        "\"localTimestamp\":\"" + DateTime.Now.ToLocalTime() + "\"" +
-                        "}";
+                var payload = "{" +
+                    "\"deviceId\":\"cpi3\", " +
+                    "\"sensorType\":\"Water Level\", " +
+                    "\"sensorReading\":" + sensorReading + ", " +
+                    "\"localTimestamp\":\"" + DateTime.Now.ToLocalTime() + "\"" +
+                    "}";
 
-                    var msg = new Message(Encoding.UTF8.GetBytes(payload));
+                var msg = new Message(Encoding.UTF8.GetBytes(payload));
 
                  
 
-                    await deviceClient.SendEventAsync(msg);
-                }
-                catch (Exception ex)
-                {
-                    int i = 0;
-                }
+                await _deviceClient.SendEventAsync(msg);
             }
+            catch (Exception ex)
+            {
+                int i = 0;
+            }
+            
             
            
         }

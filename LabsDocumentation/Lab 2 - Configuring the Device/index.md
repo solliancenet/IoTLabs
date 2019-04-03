@@ -6,4 +6,3 @@ The first boot may take some time as it is performing first time setup.
 
 Set Language and Network connectivity options
 
-## Install Software TPM
