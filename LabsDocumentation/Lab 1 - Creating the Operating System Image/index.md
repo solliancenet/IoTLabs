@@ -17,9 +17,15 @@ Download the IoT Dashboard application
 
 ![Setting up a new device](./images/IoTDashboardSetUpANewDevice.png)
 
-![Installation Console Window](./images/IoTDashboardConsoleWindow.png)
+![Installation Console Window](./images/InstallationConsoleWindow.png)
 
 ## Install the Screen
 T.B.D. until we decide which screen we are going with
+
+
+## Plug in the Keyboard and optional Mouse  
+Utilize the on-board USB ports to plug in a keyboard and mouse to aid in navigating the Windows IoT Core operating system on the device.
+
+TODO: Image of the physical device.
 
 
