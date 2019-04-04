@@ -5,7 +5,7 @@ Open the IoT Dashboard and select *Connect to Azure*. Select the IoT Hub that yo
 ![IoT Dashboard Provisioning Tool](./images/IoTDashboardProvisionTool.png)
 
 ## Retrieve the Device Connection String
-In the Azure Portal, open the IoT Hub, then under the *Explorers* section, select *IoT Devices*, then choose the device that was just created by the IoT Dashboard tool. Copy the Primary device connection string from this details page. 
+In the Azure Portal, open the IoT Hub, then under the *Explorers* section, select *IoT Devices*, then choose the device that was just created by the IoT Dashboard tool. Copy the Primary device connection string from this details page. We will need this value in the next lab.
 
 ![Portal Device Connection String](./images/PortalDeviceConnectionString.png)
 

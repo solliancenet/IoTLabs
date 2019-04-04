@@ -2,7 +2,9 @@
 
 ## Install the Windows Device Explorer
 The Windows Device Explorer allows you to visualize data as it arrives into the IoT Hub. 
-[Download and install this tool](https://aka.ms/aziotdevexp).
+[Download and install this tool](https://aka.ms/aziotdevexp). Near the bottom of the screen, you will find a link to the *SetupDeviceExplorer.msi* file. Use this file to install the tool.
+
+![Windows Device Explorer Setup](./images/deviceexplorersetup.png)
 
 ## Obtain connection information from the IoT Hub
 In the Azure Portal - select the IoT Hub, and select *Shared Access Policies* in the Settings section. From there, select the *iothubowner* role, then copy the primary key connection string value. 
