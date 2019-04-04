@@ -21,7 +21,7 @@ namespace AnalogReader
         /// <returns>True if successful, False otherwise</returns>
         public async Task<bool> Connect()
         {
-            var spiSettings = new SpiConnectionSettings(0);//for spi bus index 0
+            var spiSettings = new SpiConnectionSettings(0);//set chip select to LOW
             spiSettings.ClockFrequency = 3600000; //3.6 MHz
             spiSettings.Mode = SpiMode.Mode0;
 
@@ -42,7 +42,7 @@ namespace AnalogReader
 
         public int SampleVoltage(byte adcChannel)
         {
-            return _read(0);
+            return _read(adcChannel);
         }
 
         /// <summary>

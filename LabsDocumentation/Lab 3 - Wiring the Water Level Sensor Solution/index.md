@@ -6,7 +6,7 @@
 ## Fritzing Diagram
 ![Schematic](./images/schematic.png)
 ## Wiring Rundown
-* Pi Pin 1 - 3v3 pin to Breadboard Power Rail (red jumper)
+* Pi Pin 17 - 3v3 pin to Breadboard Power Rail (red jumper)
 * Pi Pin 39 GND pin to Breadboard Ground Rail (black jumper)
 * MCP3008 Pin 16 VDD to Breadboard Power Rail (small red wire jumper)
 * MCP3008 Pin 15 VREF to Breadboard Power Rail (small red wire jumper)
