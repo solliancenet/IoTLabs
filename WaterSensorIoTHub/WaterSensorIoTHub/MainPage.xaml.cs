@@ -66,7 +66,8 @@ namespace WaterSensorIoTHub
             }
             catch (Exception ex)
             {
-                int i = 0;
+                txtStatus.Text = "ERROR: " + ex.Message;
+                _timer.Stop();
             }
 
         }
