@@ -9,6 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="txtStatus" Text="Hello, World!" Grid.ColumnSpan="2" FontSize="100" />
+        <Button x:Name="btnStartSampling" Grid.Row="1" Grid.Column="0" Width="200" Click="btnStartSampling_Click">Start Sampling</Button>
+        <Button x:Name="btnEndSampling" Grid.Row="1" Grid.Column="1" Width="200" Click="btnEndSampling_Click">End Sampling</Button>
     </Grid>
 </Page>

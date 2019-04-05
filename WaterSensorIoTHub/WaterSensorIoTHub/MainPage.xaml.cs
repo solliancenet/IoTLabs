@@ -3,6 +3,7 @@ using Microsoft.Azure.Devices.Client;
 using System.Threading.Tasks;
 using System;
 using System.Text;
+using Windows.UI.Xaml;
 
 namespace WaterSensorIoTHub
 {
@@ -12,47 +13,54 @@ namespace WaterSensorIoTHub
     public sealed partial class MainPage : Page
     {
         private static DeviceClient _deviceClient = null;
+        private string _deviceConnectionString = "HostName=cep0516iothub.azure-devices.net;DeviceId=cpi3;SharedAccessSignature=SharedAccessSignature sr=cep0516iothub.azure-devices.net%2Fdevices%2Fcpi3&sig=fW2MvR7%2BYrjreC3IIEP49eAFVOQMahyOWUarCSynvw0%3D&se=1554422225";
+        private string _deviceId = "";
+        private MCP3008 _adc = new MCP3008();
+        private DispatcherTimer _timer = new DispatcherTimer();
+
         public MainPage()
         {
             this.InitializeComponent();
-            //AzureIoTHub.SendDeviceToCloudMessageAsync().Wait();
-            var deviceId = "cpi3";
-            var deviceKey = "xvNO1KsgmEkWHFweYATBeGg069obtqbICop8wl09+nc=";
-            var hubUri = "IoTLabsHub.azure-devices.net";
-            _deviceClient = DeviceClient.Create(hubUri, new DeviceAuthenticationWithRegistrySymmetricKey(deviceId, deviceKey), TransportType.Http1);
-            SendMessageToIoTHubAsync(84);
-           
+            _deviceClient = DeviceClient.CreateFromConnectionString(_deviceConnectionString, TransportType.Http1);
+            Setup();
+        }
+
+        private async void Setup()
+        {
+            bool isConnected = await _adc.Connect();
+            if (!isConnected)
+            {
+                txtStatus.Text = "There was a problem connecting to the MCP3008, please check your wiring";
+            }
+            else
+            {
+                btnStartSampling.IsEnabled = true;
+                _timer.Interval = TimeSpan.FromMilliseconds(100);
+                _timer.Tick += timer_Tick;
+            }
         }
 
 
-        private static async Task SendMessageToIoTHubAsync(int sensorReading)
+        /// <summary>
+        /// When actively sampling, obtain a voltage reading 
+        /// </summary>
+        /// <param name="sender">ignore</param>
+        /// <param name="e">ignore</param>
+        private async void timer_Tick(object sender, object e)
         {
-            /*
-            TpmDevice myDevice = new TpmDevice(0); // Use logical device 0 on the TPM
-            string hubUri = myDevice.GetHostName();
-            string deviceId = myDevice.GetDeviceId();
-            string sasToken = myDevice.GetSASToken();
-            using (var deviceClient = DeviceClient.Create(
-                hubUri,
-                AuthenticationMethodFactory.
-                    CreateAuthenticationWithToken(deviceId, sasToken), TransportType.Mqtt)){}
-            */
-           
-          
+            int vol = _adc.SampleVoltage(0);
+            txtStatus.Text = "READING: " + vol.ToString();
 
-           
             try
             {
                 var payload = "{" +
-                    "\"deviceId\":\"cpi3\", " +
+                    "\"deviceId\":\"" + _deviceId + "\", " +
                     "\"sensorType\":\"Water Level\", " +
-                    "\"sensorReading\":" + sensorReading + ", " +
+                    "\"sensorReading\":" + vol.ToString() + ", " +
                     "\"localTimestamp\":\"" + DateTime.Now.ToLocalTime() + "\"" +
                     "}";
 
                 var msg = new Message(Encoding.UTF8.GetBytes(payload));
-
-                 
 
                 await _deviceClient.SendEventAsync(msg);
             }
@@ -60,9 +68,27 @@ namespace WaterSensorIoTHub
             {
                 int i = 0;
             }
-            
-            
-           
+
+        }
+
+        /// <summary>
+        /// Begins the timer to sample voltage every 100ms
+        /// </summary>
+        /// <param name="sender">Start Button</param>
+        /// <param name="e">ignore</param>
+        private void btnStartSampling_Click(object sender, RoutedEventArgs e)
+        {
+            _timer.Start();
+        }
+
+        /// <summary>
+        /// Stops the timer to suspend sampling voltage
+        /// </summary>
+        /// <param name="sender">Stop Button</param>
+        /// <param name="e">ignore</param>
+        private void btnEndSampling_Click(object sender, RoutedEventArgs e)
+        {
+            _timer.Stop();
         }
 
     }
