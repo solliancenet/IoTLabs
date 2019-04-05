@@ -24,7 +24,7 @@ Open the Windows Device Explorer application, and paste the connection string in
 ## Obtain the Device SAS Token
 In the Windows Device Explorer, select the **Management** tab. In the grid toward the bottom of the screen, select your device, then press the **SAS Token** button.
 
-![Device Explorer Management Window](./images/SASToken1.png)
+![Device Explorer Management Window](./images/DeviceManagement.png)
 
 In the SAS Token screen, ensure you select your device, and enter a value for the TTL (in days). When finished, press the **Generate** button, then copy the generated value to your clipboard.
 
@@ -41,3 +41,6 @@ The UI is identical to the previous one, but the implementation differs in that 
 Verify data is flowing to the IoT Hub by accessing Device Explorer, and selecting the **Data** tab, then choosing your device from the list. Press the **Monitor** button to watch the data being received by the IoT Hub.
 
 ![Telemetry Data Received By IoT Hub](./images/telemetry.png)
+
+## Understanding the code
+Take a moment to review the code included in the project. The MCP3008 class is exactly the same as in the previous lab. In **MainPage.xaml.cs** you will notice additional code in the *timer_Tick* method that creates a JSON payload based on the data read from the sensor and sends it along to the IoT Hub.
