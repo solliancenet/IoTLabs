@@ -13,15 +13,15 @@ namespace WaterSensorIoTHub
     public sealed partial class MainPage : Page
     {
         private static DeviceClient _deviceClient = null;
-        private string _deviceConnectionString = "HostName=cep0516iothub.azure-devices.net;DeviceId=cpi3;SharedAccessSignature=SharedAccessSignature sr=cep0516iothub.azure-devices.net%2Fdevices%2Fcpi3&sig=fW2MvR7%2BYrjreC3IIEP49eAFVOQMahyOWUarCSynvw0%3D&se=1554422225";
-        private string _deviceId = "";
+        private string _deviceSasToken = "HostName=cep0516iothub.azure-devices.net;DeviceId=cpi3;SharedAccessSignature=SharedAccessSignature sr=cep0516iothub.azure-devices.net%2Fdevices%2Fcpi3&sig=iyGxDFsdFeVJ%2BQCPSezHRxqSnOzsiopl%2FWgkD4jKLpY%3D&se=1554597336";
+        private string _deviceId = "cpi3";
         private MCP3008 _adc = new MCP3008();
         private DispatcherTimer _timer = new DispatcherTimer();
 
         public MainPage()
         {
             this.InitializeComponent();
-            _deviceClient = DeviceClient.CreateFromConnectionString(_deviceConnectionString, TransportType.Http1);
+            _deviceClient = DeviceClient.CreateFromConnectionString(_deviceSasToken, TransportType.Http1);
             Setup();
         }
 
