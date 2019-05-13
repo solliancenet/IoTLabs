@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterLevelSensorBackground", "WaterLevelSensorBackground\WaterLevelSensorBackground.csproj", "{775E760C-CE13-404C-AD9E-D57751B8F351}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Debug|ARM.ActiveCfg = Debug|ARM
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Debug|ARM.Build.0 = Debug|ARM
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Debug|ARM.Deploy.0 = Debug|ARM
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Debug|x64.ActiveCfg = Debug|x64
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Debug|x64.Build.0 = Debug|x64
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Debug|x64.Deploy.0 = Debug|x64
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Debug|x86.ActiveCfg = Debug|x86
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Debug|x86.Build.0 = Debug|x86
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Debug|x86.Deploy.0 = Debug|x86
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Release|ARM.ActiveCfg = Release|ARM
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Release|ARM.Build.0 = Release|ARM
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Release|ARM.Deploy.0 = Release|ARM
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Release|x64.ActiveCfg = Release|x64
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Release|x64.Build.0 = Release|x64
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Release|x64.Deploy.0 = Release|x64
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Release|x86.ActiveCfg = Release|x86
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Release|x86.Build.0 = Release|x86
+		{775E760C-CE13-404C-AD9E-D57751B8F351}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F391734-1706-4954-B250-ED9938DC9FB8}
+	EndGlobalSection
+EndGlobal
