@@ -31,16 +31,18 @@ In the SAS Token screen, ensure you select your device, and enter a value for th
 ![Generate SAS Token](./images/SASToken.png)
 
 ## Configure application code with IoT Hub information
-Open the /WaterSensorIoTHub/WaterSensorIoTHub.sln solution file. Then open MainPage.xaml.cs, paste the SAS token that you generated in the previous step into the *_deviceSasToken* variable value (line 16), then type in the name of your device in the *_deviceName* variable (line 17). The device name is only used to identify the device in the telemetry data.
+We are going to switch gears here a little bit in that the application that we will use to send information to the IoT hub will be headless. This means that there isn't a user interface, and the application is run without requiring a screen. These headless applications can be referred to as Background Tasks. In Windows IoT Core, you are able to run only one headed (UI-based) application, but can run any number of background task applications.
+
+If you currently have a screen on your Pi, feel free to remove it now, we will not be needing it for the remainder of the labs.
+
+Open the **/WaterLevelSensorBackground/WaterLevelSensorBackground.sln** solution file. Then open **StartupTask.cs**, paste the SAS token that you generated in the previous step into the *_deviceSasToken* variable value (line 16), then type in the name of your device in the *_deviceName* variable (line 17). The device name is only used to identify the device in the telemetry data.
 
 ## Run the application
-As with the previous UWP application, ensure the application is targeting the ARM processor, and is set to run on Remote Machine (with the IP of your pi).
-
-The UI is identical to the previous one, but the implementation differs in that data is sent to the IoT Hub using the SAS token you specified in the previous step. 
+As with the previous application, ensure the application is targeting the ARM processor, and is set to run on Remote Machine (with the IP of your pi).
 
 Verify data is flowing to the IoT Hub by accessing Device Explorer, and selecting the **Data** tab, then choosing your device from the list. Press the **Monitor** button to watch the data being received by the IoT Hub.
 
 ![Telemetry Data Received By IoT Hub](./images/telemetry.png)
 
 ## Understanding the code
-Take a moment to review the code included in the project. The MCP3008 class is exactly the same as in the previous lab. In **MainPage.xaml.cs** you will notice additional code in the *timer_Tick* method that creates a JSON payload based on the data read from the sensor and sends it along to the IoT Hub.
+Take a moment to review the code included in the project. The MCP3008 class is exactly the same as in the previous lab. In **StartupTask.cs** you will notice additional code in the *Timer_Tick* method that creates a JSON payload based on the data read from the sensor and sends it along to the IoT Hub.

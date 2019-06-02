@@ -14,10 +14,10 @@ namespace WaterLevelSensorEmulator
 {
     class Program
     {
-        private static string _devicePrefix = "gogogadget";
+        private static string _devicePrefix = "cep0516";
         private static int _numberOfDevices = 5;
-        private static string _iotHubConnectionString = "HostName=iothub-uox63.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=S8rxzZU8VEF3ODm7lce0cXPrHmEVsfJZEog1xcvPNxc=";
-        private static string _iotHubHostName = "iothub-uox63.azure-devices.net";
+        private static string _iotHubConnectionString = "HostName=iothub-5hb2v.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=A+QWx1UTexepFyTDffmAMo7GQyYQxG3Z0hl9NRqFy/s=";
+        private static string _iotHubHostName = "iothub-5hb2v.azure-devices.net";
 
         private static int _maxLocationId = 29880 + 1; //Random doesn't include upper bound
         private static int _maxWaterLevelSensorReading = 512 + 1; // Random doesn't include upper bound
