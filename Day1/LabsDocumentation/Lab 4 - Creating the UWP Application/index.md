@@ -2,7 +2,7 @@
 Windows IoT Core running on the Raspberry Pi allows for UWP applications to run in the foreground. This allows you to implement applications such as kiosks and monitors to expose the data being collected by the device in a way that makes sense to your consumers.
 
 ## Deploying the application
-Open the WaterLevelSensor/AnalogReader/AnalogReader.sln solution file in Visual Studio. From the Debug toolbar, select **Remote Machine**, and enter the IP address of the device that you'd like to deploy to. 
+Open the **Day1/SourceCode/WaterLevelSensorAnalog/AnalogReader.sln** solution file in Visual Studio. From the Debug toolbar, select **Remote Machine**, and enter the IP address of the device that you'd like to deploy to. 
 Ensure the build is set to Debug, and the CPU type to ARM, then Press F5 to run the application.
 
 ![Run Settings](./images/DebugSettings.png)

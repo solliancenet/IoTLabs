@@ -35,7 +35,7 @@ We are going to switch gears here a little bit in that the application that we w
 
 If you currently have a screen on your Pi, feel free to remove it now, we will not be needing it for the remainder of the labs.
 
-Open the **/WaterLevelSensorBackground/WaterLevelSensorBackground.sln** solution file. Then open **StartupTask.cs**, paste the SAS token that you generated in the previous step into the *_deviceSasToken* variable value (line 16), then type in the name of your device in the *_deviceName* variable (line 17). The device name is only used to identify the device in the telemetry data.
+Open the **Day1/SourceCode/WaterLevelSensorBackground/WaterLevelSensorBackground.sln** solution file. Then open **StartupTask.cs**, paste the SAS token that you generated in the previous step into the *_deviceSasToken* variable value (line 16), then type in the name of your device in the *_deviceName* variable (line 17). The device name is only used to identify the device in the telemetry data.
 
 ## Run the application
 As with the previous application, ensure the application is targeting the ARM processor, and is set to run on Remote Machine (with the IP of your pi).
