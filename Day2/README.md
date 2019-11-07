@@ -16,3 +16,6 @@ Attendees will need to bring their own laptops and have access to an Azure subsc
 
 Please note that all of the above (assuming recommended sizes) amount to 10 VM vCores. Please make sure your subscription's quota has available at least this number of vCores.
 
+### Azure Notebook VMs Setup
+
+Please follow instructions outlined in [Azure Notebook VMs Setup](./azure-notebook-vms-setup) to create and update your Azure Notebook VM, and download the lab notebooks prior to starting the lab.
