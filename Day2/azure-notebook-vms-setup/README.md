@@ -46,10 +46,10 @@ At a high level, here are the setup tasks you will need to perform to prepare yo
 
 ## Task 3: Update your Notebook Environment 
 
-1.  From the Jupyter Notebooks interface, navigate to the `quick-starts->azure-machine-learning-quickstarts->aml-python-sdk->starter-artifacts->nbvm-notebooks` folder where you will find all your quickstart files.
+1.  From the Jupyter Notebooks interface, navigate to the **anomaly-detect->IoTLabs->Day2->notebooks** folder where you will find all your lab files.
 
-   ![Find your QuickStart Notebooks](images/06.png)
+   ![Find your Lab Notebooks](images/06.png 'Notebooks')
 
-2. Open notebook: **00-aml-setup/00-aml-setup.ipynb**
+2. Open notebook: **update_env.ipynb**
 
 3. Run each cell in the notebook to install the required libraries.
