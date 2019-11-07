@@ -16,6 +16,8 @@ Attendees will need to bring their own laptops and have access to an Azure subsc
 
 Please note that all of the above (assuming recommended sizes) amount to 10 VM vCores. Please make sure your subscription's quota has available at least this number of vCores.
 
+It is recommended that you create the Azure Machine Learning workspace and the Notebook VM prior to starting the lab. The Azure Machine Learning compute cluster and the ACI instance will be created during the lab. Details of how to create and configure your Notebook VM are shown below.
+
 ### Azure Notebook VMs Setup
 
 Please follow instructions outlined in [Azure Notebook VMs Setup](./azure-notebook-vms-setup) to create and update your Azure Notebook VM, and download the lab notebooks prior to starting the lab.
