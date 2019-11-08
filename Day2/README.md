@@ -6,11 +6,11 @@
 
 Attendees will need to bring their own laptops and have access to an Azure subscription that can accommodate the following:
 
-- An Azure Machine Learning workspace - Basic edition (instructions on how to provision are available at https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-manage-workspace). Its recommended to create the workspace in region: **East US**.
+- An Azure Machine Learning workspace - Basic edition (instructions on how to provision are available at https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-manage-workspace). It is recommended to create the workspace in region: **East US**.
 
 - An Azure Machine Learning Notebook VM with a recommended size of Standard_D3_v2 (details on VM sizing are available at https://docs.microsoft.com/en-us/azure/cloud-services/cloud-services-sizes-specs#dv2-series)
 
-- An Azure Machine Learning compute cluster with one node with a recommended size of Standard_NC6 (details on GPU VM sizing are available at https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-gpu#nc-series).  Note that the region `East US` supports the creation of Standard_NC6 training cluster.
+- An Azure Machine Learning compute cluster with one node with a recommended size of Standard_NC6 (details on GPU VM sizing are available at https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-gpu#nc-series). Note that not all regions support creation of the Standard_NC6 training cluster and thus it is recommended to create your machine learning workspace in region `East US`. If you create your workspace in a different region, please confirm that the region support creation of Standard_NC6 training cluster.
 
 - An Azure Container Instances instance
 
