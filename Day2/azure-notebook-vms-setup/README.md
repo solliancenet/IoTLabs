@@ -24,7 +24,7 @@ At a high level, here are the setup tasks you will need to perform to prepare yo
 
 ## Task 2: Import the Lab Notebooks
 
-1. Select the Notebook VM: **anomaly-vm** and then select **Jupyter**, to open Jupyter Notebooks interface.
+1. Select the Notebook VM: **anomaly-vm** and then select **Jupyter**, to open Jupyter Notebooks interface. *Note: You may be asked to sign into your azure account that has access to this Notebook VM.*
 
    ![Open Jupyter Notebooks Interface](images/03.png 'Open Jupyter Notebooks')
 
