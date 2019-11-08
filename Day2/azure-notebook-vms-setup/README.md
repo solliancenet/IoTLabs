@@ -52,4 +52,4 @@ At a high level, here are the setup tasks you will need to perform to prepare yo
 
 2. Open notebook: **update_env.ipynb**
 
-3. Run each cell in the notebook to install the required libraries.
+3. Run each cell in the notebook to install the required libraries. Ignore errors related to `azureml` and `tensorflow-gpu` as long as the required libraries are successfully installed at the end.
