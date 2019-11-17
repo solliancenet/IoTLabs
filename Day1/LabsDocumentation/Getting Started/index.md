@@ -14,7 +14,7 @@
 * small Philips head screwdriver (possibly depends on screen) 
 * [Visual Studio 2019 community](https://visualstudio.microsoft.com/vs/community/)
 * [Windows IoT Core Project Templates](https://marketplace.visualstudio.com/items?itemName=MicrosoftIoT.WindowsIoTCoreProjectTemplatesforVS15)
-* [Visual Studio Windows Universal Platform Development Workload](https://visualstudio.microsoft.com/vs/visual-studio-workloads)
+* [Visual Studio Windows Universal Platform Development Workload](https://docs.microsoft.com/en-us/visualstudio/install/modify-visual-studio?view=vs-2019)
 * M/F Jumper wires (at minimum 2 red, 2 black for circuit – doesn’t include monitor jumpers if required) plus 5 more random colors. 2 red, 2 black small wire segments to jump rails on breadboard
 
 # Clone the source repository from GitHub
