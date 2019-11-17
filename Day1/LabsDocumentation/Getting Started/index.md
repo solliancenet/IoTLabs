@@ -18,7 +18,7 @@
 * M/F Jumper wires (at minimum 2 red, 2 black for circuit – doesn’t include monitor jumpers if required) plus 5 more random colors. 2 red, 2 black small wire segments to jump rails on breadboard
 
 # Clone the source repository from GitHub
-URL: https://github.com/codingbandit/IoTLabs.git
+URL: https://github.com/solliancenet/IoTLabs
 
 # Screen Requirements
 Usage of a screen will only be necessary for initial setup and Lab 4.
