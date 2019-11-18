@@ -18,6 +18,14 @@ Please note that all of the above (assuming recommended sizes) amount to 10 VM v
 
 It is recommended that you create the Azure Machine Learning workspace (**Workspace edition: Basic, Region: East US**) and the Notebook VM prior to starting the lab. The Azure Machine Learning compute cluster and the ACI instance will be created during the lab. Details on how to create and configure your Notebook VM are shown below.
 
+### Requirements for real-time predictions lab
+
+In Lab 3, you will deploy a trained machine learning model. After this step, you will create a stream processing workflow that calls the trained ML model in real time to detect anomalies in incoming sensor telemetry. To complete this portion of the lab, you need the following:
+
+- [Visual Studio 2019 community](https://visualstudio.microsoft.com/vs/community/)
+- [Visual Studio **.NET Desktop Development** and **ASP.NET and Web Development** Workloads](https://docs.microsoft.com/en-us/visualstudio/install/modify-visual-studio?view=vs-2019)
+- [.NET Core 3.0 **SDK**](https://dotnet.microsoft.com/download/dotnet-core/3.0)
+
 ### Azure Notebook VMs Setup
 
 Please follow instructions outlined in [Azure Notebook VMs Setup](./azure-notebook-vms-setup) to create and update your Azure Notebook VM, and download the lab notebooks prior to starting the lab.
