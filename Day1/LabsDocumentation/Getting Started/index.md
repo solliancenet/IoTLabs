@@ -12,6 +12,7 @@
 * breadboard 
 * screen
 * small Philips head screwdriver (possibly depends on screen) 
+* Windows 10 Operating system, with [Developer mode enabled] (http://www.imagezap.org/windows-10-iot-enable-developer-mode/)
 * [Visual Studio 2019 community](https://visualstudio.microsoft.com/vs/community/)
 * [Windows IoT Core Project Templates](https://marketplace.visualstudio.com/items?itemName=MicrosoftIoT.WindowsIoTCoreProjectTemplatesforVS15)
 * [Visual Studio Windows Universal Platform Development Workload](https://docs.microsoft.com/en-us/visualstudio/install/modify-visual-studio?view=vs-2019)
