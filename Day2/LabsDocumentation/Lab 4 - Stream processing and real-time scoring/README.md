@@ -15,7 +15,7 @@ Application Insights displaying Anomaly events compared to requests to the Azure
 ## Pre-requisites
 
 - [Visual Studio 2019 community](https://visualstudio.microsoft.com/vs/community/)
-- [Visual Studio **.NET Desktop Development** and **ASP.NET and Web Development** Workloads](https://docs.microsoft.com/en-us/visualstudio/install/modify-visual-studio?view=vs-2019)
+- [Visual Studio **.NET Desktop Development**, **ASP.NET and Web Development**, and **Azure Development** Workloads](https://docs.microsoft.com/en-us/visualstudio/install/modify-visual-studio?view=vs-2019)
 - [.NET Core 3.0 **SDK**](https://dotnet.microsoft.com/download/dotnet-core/3.0)
 
 ## Configure the data generator and Azure Functions projects

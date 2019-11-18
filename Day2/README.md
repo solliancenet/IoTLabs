@@ -23,7 +23,7 @@ It is recommended that you create the Azure Machine Learning workspace (**Worksp
 In Lab 3, you will deploy a trained machine learning model. After this step, you will create a stream processing workflow that calls the trained ML model in real time to detect anomalies in incoming sensor telemetry. To complete this portion of the lab, you need the following:
 
 - [Visual Studio 2019 community](https://visualstudio.microsoft.com/vs/community/)
-- [Visual Studio **.NET Desktop Development** and **ASP.NET and Web Development** Workloads](https://docs.microsoft.com/en-us/visualstudio/install/modify-visual-studio?view=vs-2019)
+- [Visual Studio **.NET Desktop Development**, **ASP.NET and Web Development**, and **Azure Development** Workloads](https://docs.microsoft.com/en-us/visualstudio/install/modify-visual-studio?view=vs-2019)
 - [.NET Core 3.0 **SDK**](https://dotnet.microsoft.com/download/dotnet-core/3.0)
 
 ### Azure Notebook VMs Setup
