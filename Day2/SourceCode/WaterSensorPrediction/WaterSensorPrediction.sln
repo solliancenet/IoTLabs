@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterSensorPredictionFunction", "WaterSensorPredictionFunction\WaterSensorPredictionFunction.csproj", "{687D59DD-96A2-4741-BD24-48CB02066596}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterSensorPredictionGenerator", "WaterSensorPredictionGenerator\WaterSensorPredictionGenerator.csproj", "{40405151-DBB5-43AA-9705-88BC53A2C8D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterSensorPrediction.Shared", "WaterSensorPrediction.Shared\WaterSensorPrediction.Shared.csproj", "{FE3FF22F-57AD-4D3D-B613-3792258D0B09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{687D59DD-96A2-4741-BD24-48CB02066596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{687D59DD-96A2-4741-BD24-48CB02066596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{687D59DD-96A2-4741-BD24-48CB02066596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{687D59DD-96A2-4741-BD24-48CB02066596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40405151-DBB5-43AA-9705-88BC53A2C8D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40405151-DBB5-43AA-9705-88BC53A2C8D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40405151-DBB5-43AA-9705-88BC53A2C8D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40405151-DBB5-43AA-9705-88BC53A2C8D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE3FF22F-57AD-4D3D-B613-3792258D0B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE3FF22F-57AD-4D3D-B613-3792258D0B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE3FF22F-57AD-4D3D-B613-3792258D0B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE3FF22F-57AD-4D3D-B613-3792258D0B09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {400E48B0-3757-40C7-9A86-B72F40FA303A}
+	EndGlobalSection
+EndGlobal
