@@ -29,3 +29,7 @@ In Lab 3, you will deploy a trained machine learning model. After this step, you
 ### Azure Notebook VMs Setup
 
 Please follow instructions outlined in [Azure Notebook VMs Setup](./azure-notebook-vms-setup) to create and update your Azure Notebook VM, and download the lab notebooks prior to starting the lab.
+
+### Begin the Day 2 labs
+
+Begin the Day 2 labs by following the instructions in the [`LabsDocumentation` folder](LabsDocumentation/README.md).
